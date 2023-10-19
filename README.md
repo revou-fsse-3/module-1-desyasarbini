@@ -2,7 +2,7 @@
 > This is my 1st assignment for "My Profile"
 
 >> ## Hello there,
-![photo](./desya-sarbini.jpg)
+![photo](./asset/desya-sarbini.jpg)
 >>I'm **Desya Saskia Sarbini**, you can call me ***eci***. I'm an Automation Engineer in Aviation field with 6  years experience. 
 >>
 >>I'm skilled in operating, maintenace, and troubleshooting an automation equipment. however, I can also operating communication, navigation, and surveillance equipment to make sure it always ready tu use by users.
