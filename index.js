@@ -24,6 +24,9 @@ const my_name = 1;
 var myName1;
 let myname2 = 1;
 let check = ""
+{
+<Input type="text" /> 
+}
 
 
 

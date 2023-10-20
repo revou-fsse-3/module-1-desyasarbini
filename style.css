@@ -7,43 +7,55 @@
     color: #141E46;
     font-size: 16px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}*/
-Header {
-    background-image: url('./asset/Bookworms.png');
-    display: flex;
-    justify-content: space-between;
-    font-size: 18px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: #E5E8EB;
+}* masih belom bisa/
+
+/* styling top navigation bar */
+body {
+    /* margin: 0; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.myMenu {
-    list-style-type: none;
-    margin: 0;
+.topNav {
     overflow: hidden;
-    background-color: #1C3434;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #E5E8EB;
 }
 
-/* nav {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #1C3434;
-} */
-
-li {
+.topNav h1 {
     float: left;
+    display: block;
+    color: #588b5a;
+    text-align: left;
+    padding: 2px 25px;
+    text-decoration: none;
+    font-size: 16px;
 }
 
-li a {
+.topNav h1:hover {
+    color: #162727;
+}
+
+.topNav h3 {
+    float: right;
     display: block;
-    color: #FFDE59;
-    font-size: 16px;
+    color: #a00a0a;
     text-align: center;
-    padding: 10px 10px;
+    padding: 2px 25px;
     text-decoration: none;
+    font-size: 16px;
+}
+
+.topNav h3:hover {
+    color: #cf6c6c;
+}
+
+.topNav .searchBox {
+    float: right;
+    padding: 16px;
+}
+
+.topNav input [type=text] {
+    font-size: 16px;
+    border: none;
 }
 
 .myDiv {
@@ -54,21 +66,17 @@ li a {
     color: #FFDE59;
 }
 
+/* agar gambar bisa reponsive sesuai uk layar */
 .responsive {
     width: 100%;
     height: auto;
 }
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-Footer {
+.footer {
+    color: #FFDE59;
     background-color: #1C3434;
     padding: 10px;
     display: flex;
     justify-content: center;
     font-size: 18px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: #E5E8EB;
 }
