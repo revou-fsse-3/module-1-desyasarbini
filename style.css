@@ -22,26 +22,27 @@ body {
 
 .topNav h1 {
     float: left;
-    display: block;
+    display: flex;
     color: #a00a0a;
     text-align: left;
-    padding: 2px 25px;
+    padding: 5px 20px;
     text-decoration: none;
     font-size: 20px;
 }
 
 .topNav h1:hover {
     color: #cf6c6c;
+    cursor: pointer;
 }
 
 .topNav h3,
 .topNav input[type=text],
 .searchBox {
     float: right;
-    display: block;
+    display: flex;
     color: #1C3434;
     text-align: center;
-    padding: 2px 25px;
+    padding: 5px 20px;
     text-decoration: none;
     font-size: 16px;
 }
@@ -53,10 +54,11 @@ body {
 
 .topNav .searchBox {
     float: right;
-    padding: 16px;
+    padding: 20px 5px;
     font-size: 16px;
 }
 
+/* untuk input text disearch box */
 .topNav input [type=text] {
     font-size: 16px;
     border: none;
@@ -64,10 +66,10 @@ body {
 
 .topNav .searchBox button {
     float: right;
-    padding: 16px 10px;
-    margin-right: 5px;
+    padding: 2px 10px;
     background-color: #486666;
     font-size: 16px;
+    color: white;
     border: none;
     cursor: pointer;
 }
