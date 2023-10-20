@@ -23,7 +23,7 @@ body {
 .topNav h1 {
     float: left;
     display: block;
-    color: #588b5a;
+    color: #a00a0a;
     text-align: left;
     padding: 2px 25px;
     text-decoration: none;
@@ -31,13 +31,13 @@ body {
 }
 
 .topNav h1:hover {
-    color: #162727;
+    color: #cf6c6c;
 }
 
 .topNav h3 {
     float: right;
     display: block;
-    color: #a00a0a;
+    color: #1C3434;
     text-align: center;
     padding: 2px 25px;
     text-decoration: none;
@@ -45,7 +45,7 @@ body {
 }
 
 .topNav h3:hover {
-    color: #cf6c6c;
+    color: rgb(115, 126, 163);
 }
 
 .topNav .searchBox {
@@ -58,25 +58,18 @@ body {
     border: none;
 }
 
-.myDiv {
-    background-color: #E5E8EB;
-    padding: 30px;
-    text-align: center;
-    font-size: 18px;
-    color: #FFDE59;
-}
-
 /* agar gambar bisa reponsive sesuai uk layar */
 .responsive {
     width: 100%;
     height: auto;
 }
 
-.footer {
+footer {
     color: #FFDE59;
     background-color: #1C3434;
     padding: 10px;
     display: flex;
     justify-content: center;
     font-size: 18px;
+    font-weight: bolder;
 }
