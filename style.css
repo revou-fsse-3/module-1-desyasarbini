@@ -27,14 +27,16 @@ body {
     text-align: left;
     padding: 2px 25px;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .topNav h1:hover {
     color: #cf6c6c;
 }
 
-.topNav h3 {
+.topNav h3,
+.topNav input[type=text],
+.searchBox {
     float: right;
     display: block;
     color: #1C3434;
@@ -46,16 +48,28 @@ body {
 
 .topNav h3:hover {
     color: rgb(115, 126, 163);
+    cursor: pointer;
 }
 
 .topNav .searchBox {
     float: right;
     padding: 16px;
+    font-size: 16px;
 }
 
 .topNav input [type=text] {
     font-size: 16px;
     border: none;
+}
+
+.topNav .searchBox button {
+    float: right;
+    padding: 16px 10px;
+    margin-right: 5px;
+    background-color: #486666;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
 }
 
 /* agar gambar bisa reponsive sesuai uk layar */
@@ -65,7 +79,6 @@ body {
 }
 
 footer {
-    color: #FFDE59;
     background-color: #1C3434;
     padding: 10px;
     display: flex;
