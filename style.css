@@ -36,8 +36,7 @@ body {
 }
 
 .topNav h3,
-.topNav input[type=text],
-.searchBox {
+.topNav input[type=text] {
     float: right;
     display: flex;
     color: #1C3434;
@@ -52,20 +51,20 @@ body {
     cursor: pointer;
 }
 
-.topNav .searchBox {
-    float: right;
-    padding: 20px 5px;
-    font-size: 16px;
-}
-
 /* untuk input text disearch box */
 .topNav input [type=text] {
     font-size: 16px;
     border: none;
 }
 
-.topNav .searchBox button {
-    float: right;
+.searchBox {
+    position: absolute;
+    top: 420px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.searchBox button {
     padding: 2px 10px;
     background-color: #486666;
     font-size: 16px;
@@ -88,7 +87,8 @@ body {
 }
 
 /* untuk menambah tulisan digambar */
-.quote {
+.quote,
+.topNav input {
     position: absolute;
     top: 80%;
     left: 50%;
