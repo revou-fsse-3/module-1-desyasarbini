@@ -1,6 +1,8 @@
 function myFunction() {
+    document.getElementsByName("search").onclick = function () { myFunction() };
     document.getElementsByName("search").innerHTML = "belum bisa diakses";
 }
+// masih belom bisa
 // var myName1;
 // let myName2;
 // const myName3 = "cici";
