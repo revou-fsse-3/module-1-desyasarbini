@@ -24,7 +24,7 @@
 >>> 2. Reading also the thing that I enjoy mostly.
 >>> 3. I have sweet tooth, that's why it hard for me to resist dessert 
 >>>
-
+check my assignment here https://module-1-desyasarbini.netlify.app/
 
 
 
