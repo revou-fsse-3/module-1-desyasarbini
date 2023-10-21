@@ -8,18 +8,20 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }* masih belom bisa */
 
-/* styling top navigation bar */
+/* styling body*/
 body {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #E5E8EB;
 }
 
+/* styling kelas navigasi*/
 .topNav {
     overflow: hidden;
     background-color: #E5E8EB;
 }
 
+/* styling kelas topnav h1 yg login */
 .topNav h1 {
     float: left;
     display: flex;
@@ -30,11 +32,13 @@ body {
     font-size: 20px;
 }
 
+/* untuk memberi efek ketika kelas bagian login ditunjuk*/
 .topNav h1:hover {
     color: #cf6c6c;
     cursor: pointer;
 }
 
+/* style untuk kelas bagian daftar favorit dan search area */
 .topNav h3,
 .topNav input[type=text] {
     float: right;
@@ -46,6 +50,7 @@ body {
     font-size: 16px;
 }
 
+/* untuk memberi efek ketika kelas topnav h3 ditunjuk*/
 .topNav h3:hover {
     color: rgb(115, 126, 163);
     cursor: pointer;
@@ -57,6 +62,7 @@ body {
     border: none;
 }
 
+/* kelas search area */
 .searchBox {
     position: absolute;
     top: 420px;
@@ -64,6 +70,7 @@ body {
     transform: translateX(-50%);
 }
 
+/* kelas tombol search */
 .searchBox button {
     padding: 2px 10px;
     background-color: #486666;
