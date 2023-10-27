@@ -1,43 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page</title>
     <link rel="stylesheet" href="style.css">
-    <!--input link external css-->
-    <link rel="icon" href="./asset/iconweb.png" type="image">
-    <!-- ikon untuk web -->
-    <title>Bookworm's sanctuary</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="./asset/new-logo.svg">
 </head>
-
 <body>
     <header>
-        <div class="topNav">
-            <h1 href="masuk">Log in</h1>
-            <h3 href="daftar">daftar</h3>
-            <h3 href="home">home</h3>
-            <h3 href="fav">favorite</h3>
-        </div>
-        <form action="">
-            <input type="checkbox" id="masuk" name="masuk" value="login">
-            <label for="masuk">tetap masuk</label><br>
-        </form>
+        <!-- bagian logo -->
+        <img class="logo" src="./asset/new-logo.svg" alt="logo">
+        <h2>Laftoread.</h2>
+        <!-- bagian navbar -->
+        <nav class="nav-bar">
+            <a href="#">books</a>
+            <a href="#">comics</a>
+            <a href="#">recipes</a>
+            <a href="#">favorite</a>
+            <!-- tombol login -->
+            <button class="btnLogin-popup">login</button>
+        </nav>
     </header>
-    <div class="mainPage">
-        <img src="./asset/imgweb.png" alt="main-page" class="responsive">
-        <div class="searchBox">
-            <button onclick="myFunction()">search</button>
-            <input type="search" name="search" placeholder="author/title.">
-        </div>
-        <div class="quote">enjoy your reading time</div>
+    <div style="display: flex; height: 550px;">
+        <main>
+            <p>
+                Welcome to Laftoread!<br> 
+                This website is a space for you to read any kind of books, comics, and recipes<br> 
+                hope you enjoy your time using this web
+            </p>
+        </main>
+        <aside>
+            <!-- layout untuk login dan signup form -->
+            <div class="wrapper">
+                <!-- icon close -->
+                <span class="icon-close">
+                    <i class="fa-solid fa-xmark"></i>
+                </span>
+                <!-- bagian form login -->
+                <div class="form-box login">
+                <!-- judul login form -->
+                    <h2>login</h2>
+                    <!-- isi login form -->
+                    <form action="#">
+                        <!-- input email section -->
+                        <div class="input-box">
+                            <span class="icon">
+                                <i class="fa fa-envelope" style="color: #e33535;"></i>
+                            </span>
+                            <input id="email" type="email" required>
+                            <label>e-mail</label>
+                        </div>
+                        <!-- input password section -->
+                        <div class="input-box">
+                            <span class="icon">
+                                <i class="fa-solid fa-lock" style="color: #e33535;"></i>
+                            </span>
+                            <input id="password" type="password" required>
+                            <label>password</label>
+                        </div>
+                        <!-- untuk keep login -->
+                        <div class="remember-forgot">
+                            <label>
+                                <input type="checkbox">keep login
+                            </label>
+                        </div>
+                        <!-- tombol login submit -->
+                        <button type="submit" class="btn" value="kirim" onclick="submitform(event)">login</button>
+                        <!-- link menuju signup form -->
+                        <div class="login-signup">
+                            <p>Don't have an account? 
+                                <a href="#" class="signup-link">signup</a>
+                            </p>
+                        </div>
+                    </form>
+                </div>
+                <!-- bagian form sign-up -->
+                <div class="form-box signup">
+                    <!-- judul signup form -->
+                    <h2>signup</h2>
+                    <!-- isi signup form -->
+                    <form action="#">
+                        <div class="input-box">
+                            <span class="icon">
+                                <i class="fa-solid fa-user" style="color: #e33535;"></i>
+                            </span>
+                            <input id="username" type="text" required>
+                            <label>username</label>
+                        </div>
+                        <div class="input-box">
+                            <span class="icon">
+                                <i class="fa fa-envelope" style="color: #e33535;"></i>
+                            </span>
+                            <input id="email_signup" type="email" required>
+                            <label>e-mail</label>
+                        </div>
+                        <div class="input-box">
+                            <span class="icon">
+                                <i class="fa-solid fa-lock" style="color: #e33535;"></i>
+                            </span>
+                            <input id="password_signup" type="password" required>
+                            <label>password</label>
+                        </div>
+                        <div class="remember-forgot">
+                            <label>
+                                <input type="checkbox">I agree to the terms & conditions
+                            </label>
+                        </div>
+                        <button type="submit" class="btn" value="signup" onclick="submitformSignup(event)">signup</button>
+                        <div class="login-signup">
+                            <p>already have an account?
+                                <a href="#" class="login-link">login</a>
+                            </p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </aside>
     </div>
+    <section>
+        <p>bagian section</p>
+    </section>
     <footer>
-        <a href="https://www.linkedin.com/in/desya-sarbini" style="color: #FFDE59;">desyasarbini</a>
+        <a href="https://www.linkedin.com/in/desya-sarbini/">Linkedin</a>
     </footer>
     <script src="index.js"></script>
 </body>
-
 </html>
-<!-- ctrl "/" shortcut untuk comment -->
-<!-- shift + 1 + enter shortcut untuk isi index.html-->

@@ -1,118 +1,361 @@
-/*style the header*/
-/* .myLogo {
+/* import font dari google font */
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap');
+
+/* styling untuk keseluruhan */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: 'Dosis', Verdana;
+}
+
+/* styling body */
+body {
+    color: #112a3b;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+}
+
+/* styling bagian header */
+header {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px 20px;
+    background-color: #eff3f5;
+}
+
+/* cursor jika ke arah logo akan menjadi pointer */
+.logo {
+    cursor: pointer;
     display: flex;
     justify-content: flex-start;
-    background-color: #f8d1f6;
-    color: #141E46;
-    font-size: 16px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}* masih belom bisa */
-
-/* styling body*/
-body {
-    margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #E5E8EB;
 }
 
-/* styling kelas navigasi*/
-.topNav {
-    overflow: hidden;
-    background-color: #E5E8EB;
-}
-
-/* styling kelas topnav h1 yg login */
-.topNav h1 {
-    float: left;
+/* nama website */
+h2 {
     display: flex;
-    color: #a00a0a;
-    text-align: left;
-    padding: 5px 20px;
-    text-decoration: none;
-    font-size: 20px;
+    position: relative;
+    
 }
-
-/* untuk memberi efek ketika kelas bagian login ditunjuk*/
-.topNav h1:hover {
-    color: #cf6c6c;
-    cursor: pointer;
-}
-
-/* style untuk kelas bagian daftar favorit dan search area */
-.topNav h3,
-.topNav input[type=text] {
-    float: right;
+.nav-bar {
     display: flex;
-    color: #1C3434;
-    text-align: center;
-    padding: 5px 20px;
-    text-decoration: none;
-    font-size: 16px;
-}
-
-/* untuk memberi efek ketika kelas topnav h3 ditunjuk*/
-.topNav h3:hover {
-    color: rgb(115, 126, 163);
-    cursor: pointer;
-}
-
-/* untuk input text disearch box */
-.topNav input [type=text] {
-    font-size: 16px;
-    border: none;
-}
-
-/* kelas search area */
-.searchBox {
-    position: absolute;
-    top: 420px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-/* kelas tombol search */
-.searchBox button {
-    padding: 2px 10px;
-    background-color: #486666;
-    font-size: 16px;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-/* id untuk login checkbox */
-#masuk {
-    background-color: #E5E8EB;
     justify-content: flex-end;
+    align-items: center;
     margin-left: 10px;
 }
-
-.mainPage {
+/* styling nav-bar */
+.nav-bar a {
+    display: flex;
     position: relative;
-    text-align: center;
-    color: rgb(207, 106, 106);
+    font-size: 20px;
+    color: #112a3b;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
 }
 
-/* untuk menambah tulisan digambar */
-.quote,
-.topNav input {
+/* memeberikan efek garis bawah karena tidak berisi konten pada nav-bar 
+scalex 1 maka garis bawah tetap 
+transitionnya seberapa cepat gerakan garis bawah nav-bar */
+.nav-bar a::after {
+    content: '';
     position: absolute;
-    top: 80%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-/* agar gambar bisa reponsive sesuai uk layar */
-.responsive {
+    left: 0;
+    bottom: -6px;
     width: 100%;
-    height: auto;
+    height: 3px;
+    background: #16364b;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s ;
 }
 
-footer {
-    background-color: #1C3434;
-    padding: 10px;
+/* hover nav-bar garis efek dari titik kiri 
+ke arah kanan akan muncul dan tetap sampai kursor digeser lagi */
+.nav-bar a:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+/* styling btn login dari bg sampai transisi waktu mnculnya bg btn login */
+.nav-bar .btnLogin-popup {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    color: #112a3b;
+    border: 2px solid #112a3b;
+    outline: none;
+    border-radius: 60px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: 0.5s;
+}
+
+/* warna bg akan muncul saat ditunjuk tombol login yg baru */
+.nav-bar .btnLogin-popup:hover {
+    background: #ca4c4c;
+    color: #ffffff;
+}
+
+/* styling section main 
+pembagian width dengan aside agar sebaris */
+main {
+    width: 30%;
     display: flex;
     justify-content: center;
-    font-size: 18px;
-    font-weight: bolder;
+    align-items: center;
+    margin-left: 50px;
+    font-size: 20px;
+    font-weight: 500;
 }
+
+/* styling aside
+aside 1 berisi paragraph
+aside 2 berisi login sign up form */
+aside {
+    width: 70%;
+    display: flex;
+    justify-content: flex-end;
+    align-items:center;
+}
+
+/* styling wrapper aside */
+aside .wrapper {
+    width: 400px;
+    padding: 0 20px;
+    margin: 0 20px;
+    right: 20px;
+}
+
+/* styling box form
+box shadow untuk efek bayangan saat form kluar
+overflow hidden agar form yg lain tidak terlihat
+transform scale agar bisa hilang dan mucul ketika diklik
+transition waktu transisi box-form*/
+.wrapper {
+    position: relative;
+    height: 420px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transform: scale(0);
+    transition: transform .5s ease, height .2s ease;
+}
+
+/* untuk memunculkan form login ketika login btn diklik */
+.wrapper.active-popup {
+    transform: scale(1);
+}
+
+/* tinggi box berubah saat form signup */
+.wrapper.active {
+    height: 480px;
+}
+
+/* lebar form di box dan padding */
+.wrapper .form-box {
+    width: 100%;
+    padding: 40px;
+}
+
+/* waktu transisi form login dan  titik awal pergeseran form */
+.wrapper .form-box.login {
+    transition: transform .18s ease;
+    transform: translateX(0);
+}
+
+/* ketika tanda signup diklik form login bergeser agar tidak terlihat */
+.wrapper.active .form-box.login {
+    transition: none;
+    transform: translateX(400px);
+}
+
+/* ketika tanda login diklik form signup bergeser */
+.wrapper .form-box.signup {
+    position: absolute;
+    transition: none;
+    transform: translateX(-400px);
+}
+
+/* waktu transisi form login dan  titik awal pergeseran form */
+.wrapper.active .form-box.signup {
+    transition: transform .18s ease;
+    transform: translateX(0);
+}
+
+/* ikon close di box form 
+z-index agar tombol x berada di dpn box form dan bisa diklik*/
+.wrapper .icon-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    background: #ca4c4c;
+    font-size: 1em;
+    color:#ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+/* judul form box */
+.form-box h2 {
+    font-size: 2em;
+    color: #16364b;
+    text-align: center;
+}
+
+/* untuk memberi garis bawah di bagian input */
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #ca4c4c;
+    margin: 30px 0;
+}
+
+/* styling label form ke atas ketika form diklik */
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #16364b;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .5s;
+}
+
+/* agar label bergerak naik ketika diklik */
+.input-box input:focus~label,
+.input-box input:valid~label {
+    top: -5px;
+}
+
+/* box-input agar transparant */
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: #ca4c4c;
+    font-weight: 600;
+    padding: 2px 35px 0 5px;
+}
+
+/* ikon form */
+.input-box .icon {
+    position: absolute;
+    right: 8px;
+    font-size: 1.2em;
+    color: #ca4c4c;
+    line-height: 57px;
+}
+
+/* styling checkbox */
+.remember-forgot {
+    color: #112a3b;
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+/* checkbox label */
+.remember-forgot label input {
+    accent-color: #112a3b;
+    margin-right: 3px;
+}
+
+/* styling tombol */
+.btn {
+    width: 100%;
+    height: 45px;
+    background: #ca4c4c;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+/* styling catatan kaki */
+.login-signup {
+    font-size: 15px;
+    color: #112a3b;
+    text-align: center;
+    font-weight: 500;
+    margin: 25px 0 10px;
+}
+
+/* styling tulisan form signup */
+.login-signup p a {
+    color: #ca4c4c;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* hover tulisan catatan kaki form */
+.login-signup p a:hover {
+    text-decoration: underline;
+}
+
+/* styling layout section */
+section {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 500;
+    align-items: center;
+    justify-content: center;
+    background: #ca4c4c;
+}
+
+/* styling pargaraf pd section */
+section p {
+    color: #ffe6e6;
+    text-decoration: none;
+}
+
+/* styling footer */
+footer {
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 500;
+    align-items: center;
+    justify-content: center;
+    background: #112a3b;
+}
+
+/* styling tulisan footer */
+footer a {
+    color: #ffe6e6;
+    text-decoration: none;
+}
+
+
+
