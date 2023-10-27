@@ -41,12 +41,24 @@ h2 {
     position: relative;
     
 }
+
+q {
+    font-size: 18px;
+    font-style: italic;
+}
+
+p {
+    font-size: 18px;
+    /* font-style: italic; */
+}
+
 .nav-bar {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     margin-left: 10px;
 }
+
 /* styling nav-bar */
 .nav-bar a {
     display: flex;
@@ -68,7 +80,7 @@ transitionnya seberapa cepat gerakan garis bawah nav-bar */
     bottom: -6px;
     width: 100%;
     height: 3px;
-    background: #16364b;
+    background: #ca4c4c;
     transform-origin: right;
     transform: scaleX(0);
     transition: transform .5s ;
@@ -106,7 +118,7 @@ ke arah kanan akan muncul dan tetap sampai kursor digeser lagi */
 /* styling section main 
 pembagian width dengan aside agar sebaris */
 main {
-    width: 30%;
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -119,7 +131,7 @@ main {
 aside 1 berisi paragraph
 aside 2 berisi login sign up form */
 aside {
-    width: 70%;
+    width: 50%;
     display: flex;
     justify-content: flex-end;
     align-items:center;
@@ -130,7 +142,6 @@ aside .wrapper {
     width: 400px;
     padding: 0 20px;
     margin: 0 20px;
-    right: 20px;
 }
 
 /* styling box form
@@ -357,5 +368,7 @@ footer a {
     text-decoration: none;
 }
 
-
-
+/* bg main section */
+.background-main {
+    position: absolute;
+}
