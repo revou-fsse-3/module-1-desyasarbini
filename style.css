@@ -1,9 +1,9 @@
 /* import font dari google font */
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap');
 
-body {
+/* body {
     background:#eff3f5
-}
+} */
 
 /* styling untuk keseluruhan */
 * {
@@ -15,7 +15,7 @@ body {
 
 /* settingan responsive display */
 /* styling body */
-@media screen and (min-width: 650px) {
+
 body {
     color: #112a3b;
     justify-content: center;
@@ -164,6 +164,7 @@ transition waktu transisi box-form*/
     display: flex;
     justify-content: center;
     align-items: center;
+    background: #ffffff;
     overflow: hidden;
     transform: scale(0);
     transition: transform .5s ease, height .2s ease;
@@ -379,4 +380,6 @@ footer a {
     position: absolute;
 }
 
+@media only screen and (max-width: 600px) {
+body {background: #ca4c4c;}
 }
