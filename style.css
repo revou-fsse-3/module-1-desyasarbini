@@ -15,7 +15,7 @@ body {
 
 /* settingan responsive display */
 /* styling body */
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 850px) {
 body {
     color: #112a3b;
     justify-content: center;
