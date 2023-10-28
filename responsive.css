@@ -1,0 +1,43 @@
+/* untuk screen mobile (kurang dari 600px) */
+@media only screen and (max-width: 600px) {
+    .nav-bar a, button {
+        display: none;
+    }
+
+    h2 {
+        display: none;
+    }
+    main {
+        justify-content: center;
+        align-items: flex-start;
+        font-size: smaller;
+    }
+    .menu-bar {
+        display: flex;
+    }
+    
+}
+
+/* untuk screen tablet (lebih dari 600px) */
+@media only screen and (min-width: 600px) {
+    .nav-bar a {
+        display: none;
+    }
+
+    h2 {
+        display: flex;
+    }
+    main {
+        font-size: smaller;
+    }
+    .wrapper.active-popup {
+        display: grid;
+    }
+}
+
+/* untuk screen desktop (lebih dari 800px) */
+@media only screen and (min-width: 800px) {
+    .nav-bar a {
+        display: flex;
+    }
+}

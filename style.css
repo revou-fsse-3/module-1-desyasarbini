@@ -13,9 +13,7 @@
     font-family: 'Dosis', Verdana;
 }
 
-/* settingan responsive display */
 /* styling body */
-
 body {
     color: #112a3b;
     justify-content: center;
@@ -23,6 +21,7 @@ body {
     background: #ffffff;
 }
 
+/* Bagian Header Start*/
 /* styling bagian header */
 header {
     display: flex;
@@ -41,22 +40,12 @@ header {
     justify-content: flex-start;
 }
 
+/* Bagian Nav-bar */
 /* nama website */
 h2 {
     display: flex;
     position: relative;
     
-}
-
-q {
-    font-size: 18px;
-    font-style: italic;
-    color: #ca4c4c;
-}
-
-main p {
-    font-size: 18px;
-    font-style: italic;
 }
 
 .nav-bar {
@@ -122,23 +111,50 @@ ke arah kanan akan muncul dan tetap sampai kursor digeser lagi */
     color: #ffffff;
 }
 
-/* styling section main 
-pembagian width dengan aside agar sebaris */
-main {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 50px;
-    font-size: 20px;
-    font-weight: 500;
+.menu-bar {
+    padding: 10px;
+    margin: 10px;
+    display: none;
+    font-size: 30px;
 }
 
+/* bagian Header dan Navbar selesai */
+
+.frontpage {
+    margin: auto;
+    padding: 20px;
+}
+/* bagian main */
+main {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-left: 50px; */
+    font-size: 20px;
+    font-weight: 500;
+    margin: 20px;
+    padding: 20px;
+}
+
+q {
+    font-size: 18px;
+    font-style: italic;
+    color: #ca4c4c;
+}
+
+main p {
+    font-size: 18px;
+    font-style: italic;
+}
+/* bagian main selesai */
+
+/* bagian aside */
 /* styling aside
 aside 1 berisi paragraph
 aside 2 berisi login sign up form */
 aside {
-    width: 50%;
+    width: 100%;
     display: flex;
     justify-content: flex-end;
     align-items:center;
@@ -151,6 +167,7 @@ aside .wrapper {
     margin: 0 20px;
 }
 
+/* bagian login dan signup */
 /* styling box form
 box shadow untuk efek bayangan saat form kluar
 overflow hidden agar form yg lain tidak terlihat
@@ -336,6 +353,9 @@ z-index agar tombol x berada di dpn box form dan bisa diklik*/
 .login-signup p a:hover {
     text-decoration: underline;
 }
+/* bagian aside selesai
+bagian form signup dan login */
+
 
 /* styling layout section */
 section {
@@ -380,6 +400,14 @@ footer a {
     position: absolute;
 }
 
-@media only screen and (max-width: 600px) {
-body {background: #ebf0f3;}
-}
+/* for responsible media query */
+/* 900++ untuk desktop */
+/* 500++ untuk tablet */
+/* under 500 unutk pc */
+
+/* default */
+/* body {
+    background-color: rgb(255, 255, 255);
+} */
+
+/* tablet */
