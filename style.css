@@ -334,19 +334,18 @@ z-index agar tombol x berada di dpn box form dan bisa diklik*/
 section {
     display: flex;
     width: 100%;
-    height: 50px;
     padding: 10px;
     margin: 0;
     font-size: 18px;
     font-weight: 500;
     align-items: center;
     justify-content: center;
-    background: #ca4c4c;
+    background: #ebf0f3;
 }
 
 /* styling pargaraf pd section */
 section p2 {
-    color: #ffe6e6;
+    color: #ca4c4c;
     text-decoration: none;
 }
 
