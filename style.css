@@ -1,3 +1,6 @@
+/* sttingan responsive display */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+
 /* import font dari google font */
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap');
 
@@ -371,4 +374,6 @@ footer a {
 /* bg main section */
 .background-main {
     position: absolute;
+}
+
 }
