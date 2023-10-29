@@ -51,3 +51,12 @@ btnPopup.addEventListener("click", () => {
 iconClose.addEventListener("click", () => {
   wrapper.classList.remove("active-popup");
 });
+
+function toggleMenu() {
+  var menu = document.getElementsByClassName("toggle");
+  if (menu.style.display === "block") {
+    menu.style.display = "none";
+  } else {
+    menu.style.display = "block";
+  }
+}

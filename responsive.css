@@ -1,38 +1,69 @@
-/* untuk screen mobile (kurang dari 600px) */
-@media only screen and (max-width: 600px) {
-    .nav-bar a, button {
-        display: none;
-    }
+/* Common styles for both desktop and mobile */
+/* import font dari google font */
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap');
 
-    h2 {
-        display: none;
-    }
-    main {
-        justify-content: center;
-        align-items: flex-start;
-        font-size: smaller;
-    }
-    .menu-bar {
-        display: flex;
-    }
-    
+/* Common styling for body and header */
+body {
+    color: #112a3b;
+    font-family: 'Dosis', Verdana;
 }
 
-/* untuk screen tablet (lebih dari 600px) */
-@media only screen and (min-width: 600px) {
-    .nav-bar a {
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+    background-color: #eff3f5;
+}
+
+/* untuk screen tablet (kurang dari 768px) */
+@media only screen and (max-width: 768px) {
+    
+    /* .nav-bar a, button {
         display: none;
     }
 
     h2 {
-        display: flex;
+        display: none;
     }
-    main {
-        font-size: smaller;
+    .frontpage {
+        width: 100%;
     }
-    .wrapper.active-popup {
-        display: grid;
+    aside {
+        display: inline-block;
+    } */
+    .checkbtn {
+        display: block;
     }
+    
+    .nav-bar {
+        width: 100%;
+        display: block;
+        align-items: center;
+        text-align: center;
+        height: 40vh;
+        background: #eff3f5;
+        top: -100%;
+        transition: all .5s;
+    }
+
+    .nav-bar a {
+        font-size: 18px;
+    }
+
+    .nav-bar a::after,
+    .nav-bar a:hover::after {
+        background: none;
+    }
+
+    .logoweb {
+        display: none;
+    }
+    
+    #check:checked ~ nav-bar {
+        top: 0;
+    }
+     
 }
 
 /* untuk screen desktop (lebih dari 800px) */

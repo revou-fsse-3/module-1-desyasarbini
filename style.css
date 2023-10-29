@@ -16,54 +16,61 @@
 /* styling body */
 body {
     color: #112a3b;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center;
+    align-items: center; */
     background: #ffffff;
 }
 
 /* Bagian Header Start*/
 /* styling bagian header */
 header {
-    display: flex;
-    position: relative;
-    justify-content: space-between;
-    align-items: center;
+    position: fixed;
     width: 100%;
-    padding: 20px 20px;
     background-color: #eff3f5;
+}
+
+/* bagian logo dan judul */
+.logoweb {
+    width: 100%;
+    background: #eff3f5;
+    box-sizing: border-box;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+    display: flex;
+    font-size: 20px;
 }
 
 /* cursor jika ke arah logo akan menjadi pointer */
 .logo {
     cursor: pointer;
-    display: flex;
-    justify-content: flex-start;
+    margin: 0 10px;
+}
+
+.logoweb h2 {
+    font-size: 30px;
 }
 
 /* Bagian Nav-bar */
-/* nama website */
-h2 {
-    display: flex;
-    position: relative;
-    
-}
-
 .nav-bar {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    margin-left: 10px;
+    width: 100%;
 }
 
 /* styling nav-bar */
 .nav-bar a {
     display: flex;
-    position: relative;
+    padding: 10px;
     font-size: 20px;
     color: #112a3b;
     text-decoration: none;
     font-weight: 500;
-    margin-left: 40px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 10px;
 }
 
 /* memeberikan efek garis bawah karena tidak berisi konten pada nav-bar 
@@ -89,6 +96,23 @@ ke arah kanan akan muncul dan tetap sampai kursor digeser lagi */
     transform: scaleX(1);
 }
 
+/* menubar icon */
+.checkbtn {
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 30px;
+    color: #16364b;
+    text-align: right;
+    box-sizing: border-box;
+    display: none;
+    cursor: pointer;
+}
+
+#check {
+    display: none;
+}
+/* menubar icon selesai */
+
 /* styling btn login dari bg sampai transisi waktu mnculnya bg btn login */
 .nav-bar .btnLogin-popup {
     width: 130px;
@@ -101,7 +125,6 @@ ke arah kanan akan muncul dan tetap sampai kursor digeser lagi */
     cursor: pointer;
     font-size: 20px;
     font-weight: 500;
-    margin-left: 40px;
     transition: 0.5s;
 }
 
@@ -111,33 +134,23 @@ ke arah kanan akan muncul dan tetap sampai kursor digeser lagi */
     color: #ffffff;
 }
 
-.menu-bar {
-    padding: 10px;
-    margin: 10px;
-    display: none;
-    font-size: 30px;
-}
-
 /* bagian Header dan Navbar selesai */
 
-.frontpage {
-    margin: auto;
-    padding: 20px;
-}
+/* bagian frontpage */
+
 /* bagian main */
 main {
     width: 100%;
-    display: flex;
+    margin: 0 auto;
+    padding: 30px 20px;
     justify-content: space-between;
     align-items: center;
-    /* margin-left: 50px; */
     font-size: 20px;
-    font-weight: 500;
-    margin: 20px;
-    padding: 20px;
+    font-weight: 500;  
+    min-height: calc(100vh - 378px - 42px);
 }
 
-q {
+article q {
     font-size: 18px;
     font-style: italic;
     color: #ca4c4c;
@@ -146,6 +159,26 @@ q {
 main p {
     font-size: 18px;
     font-style: italic;
+}
+
+article {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+article:last-child {
+    margin-bottom: 0;
+}
+
+article h3 {
+    margin: 10px 0 25px 0;
+}
+
+article p {
+    margin-top: 16px;
+    line-height: 24px;
 }
 /* bagian main selesai */
 
@@ -361,8 +394,8 @@ bagian form signup dan login */
 section {
     display: flex;
     width: 100%;
-    padding: 10px;
     margin: 0;
+    padding: 10px;
     font-size: 18px;
     font-weight: 500;
     align-items: center;
@@ -380,8 +413,8 @@ section p2 {
 footer {
     display: flex;
     width: 100%;
-    padding: 10px;
     margin: 0;
+    padding: 10px;
     font-size: 18px;
     font-weight: 500;
     align-items: center;
@@ -394,20 +427,3 @@ footer a {
     color: #ffe6e6;
     text-decoration: none;
 }
-
-/* bg main section */
-.background-main {
-    position: absolute;
-}
-
-/* for responsible media query */
-/* 900++ untuk desktop */
-/* 500++ untuk tablet */
-/* under 500 unutk pc */
-
-/* default */
-/* body {
-    background-color: rgb(255, 255, 255);
-} */
-
-/* tablet */

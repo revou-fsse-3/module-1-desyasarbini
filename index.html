@@ -13,25 +13,28 @@
 </head>
 <body>
     <header>
-        <!-- bagian logo -->
-        <img class="logo" src="./asset/new-logo.svg" alt="logo">
-        <h2>Laftoread.</h2>
+        <div class="logoweb">
+            <!-- bagian logo -->
+            <img class="logo" src="./asset/new-logo.svg" alt="logo">
+            <h2>Laftoread.</h2>
+        </div>
         <!-- bagian navbar -->
         <nav class="nav-bar">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fa-solid fa-bars"></i>
+            </label>
             <a href="#">books</a>
             <a href="#">comics</a>
             <a href="#">recipes</a>
             <a href="#">favorite</a>
             <!-- tombol login -->
             <button class="btnLogin-popup">login</button>
-            <div class="menu-bar">
-                <i class="fa-solid fa-bars"></i>
-            </div>
         </nav>
     </header>
-    <div class="frontpage" style="display: flex;">
+    <div>
         <main>
-            <div>
+            <article>
                 <q>
                     you know you've read a good book when you turn the last page, and feel a little as if you have lost a friend
                 </q>
@@ -46,7 +49,20 @@
                     <br>hope you enjoy your time with Laftoread
                     <br>don't forget to signup to keep updated
                 </p>
-            </div>
+            </article>
+            <article>
+                <h3>section Books</h3>
+                <h4>1# Rich dad and poor dad by robert t kiyosaki</h4>
+                <p>
+                    it's about how different the lessons about money for 2 boys from their dad
+                    how money works for them.
+                    try to read it
+                </p>
+                <p>
+                    Rich Dad’s Lesson 1: “The rich don’t work for money.” 
+                    In today’s world, there’s never been a more significant divide between the rich and all other income classes. Some economists in California even noticed that about 95% of income gains between 2009-2012 went to the wealthiest people in the world– the one percent
+                </p>
+            </article>
         </main>
         <aside>
             <!-- layout untuk login dan signup form -->
