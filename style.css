@@ -34,9 +34,8 @@ header {
     width: 100%;
     background: #eff3f5;
     box-sizing: border-box;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
-    margin: 10px;
     display: flex;
     font-size: 20px;
 }
@@ -48,7 +47,8 @@ header {
 }
 
 .logoweb h2 {
-    font-size: 30px;
+    font-size: 26px;
+    margin: 10px;
 }
 
 /* Bagian Nav-bar */
@@ -106,6 +106,7 @@ ke arah kanan akan muncul dan tetap sampai kursor digeser lagi */
     box-sizing: border-box;
     display: none;
     cursor: pointer;
+    position: relative;
 }
 
 #check {
@@ -142,7 +143,7 @@ div .frontpage {
     width: 100%;
     display: flex;
     background: #ffffff;
-    z-index: 1;
+    /* z-index: 1; */
 }
 
 /* bagian main */
@@ -155,8 +156,8 @@ div main {
     font-size: 20px;
     font-weight: 500; 
     margin-top: 160px;
-    height: 200px; 
-    min-height: calc(100vh - 378px - 42px);
+    height: auto; 
+    /* min-height: calc(100vh - 378px - 42px); */
 }
 
 main section {
@@ -207,19 +208,19 @@ aside 2 berisi login sign up form */
 div aside {
     width: 100%;
     height: auto;
-    min-height: calc(100vh - 378px - 42px);
-    margin-top: 160px;
-    height: 200px;
-    /* display: flex;
-    justify-content: flex-end; */
-    /* align-items:center; */
+    /* min-height: calc(100vh - 378px - 42px); */
+    /* margin-top: 160px; */
+    /* height: 200px; */
+    display: flex;
+    justify-content: center;
+    align-items:center;
 }
 
 /* styling wrapper aside */
 aside .wrapper {
     width: 400px;
-    padding: 0 20px;
-    margin: 0 20px;
+    padding: 20px 20px;
+    margin: 20px 20px;
 }
 
 /* bagian login dan signup */
@@ -374,7 +375,7 @@ z-index agar tombol x berada di dpn box form dan bisa diklik*/
     margin-right: 3px;
 }
 
-/* styling tombol */
+/* styling tombol submit */
 .btn {
     width: 100%;
     height: 45px;
@@ -411,25 +412,11 @@ z-index agar tombol x berada di dpn box form dan bisa diklik*/
 /* bagian aside selesai
 bagian form signup dan login */
 
-
-/* styling layout section */
-/* section {
-    display: flex;
-    width: 100%;
-    margin: 0;
-    padding: 10px;
-    font-size: 18px;
-    font-weight: 500;
-    align-items: center;
-    justify-content: center;
-    background: #ebf0f3;
-} */
-
 /* styling pargaraf pd section */
-section p2 {
+/* section p2 {
     color: #ca4c4c;
     text-decoration: none;
-}
+} */
 
 /* styling footer */
 footer {

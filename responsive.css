@@ -17,7 +17,7 @@ header {
 }
 
 /* untuk screen tablet (kurang dari 768px) */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 668px) {
     
     /* .nav-bar a, button {
         display: none;
@@ -32,23 +32,38 @@ header {
     aside {
         display: inline-block;
     } */
+
+    .logo {
+        display: none;
+    }
+    .logoweb {
+        justify-content: flex-start;
+    }
+
+    .logoweb h2 {
+        display: block;
+        font-size: 18px;
+    }
     .checkbtn {
         display: block;
+        font-size: 18px;
     }
     
-    .nav-bar {
+    .nav-bar a, .btnLogin-popup{
         width: 100%;
-        display: block;
+        display: none;
         align-items: center;
         text-align: center;
-        height: 40vh;
+        height: 62vh;
         background: #eff3f5;
         top: -100%;
         transition: all .5s;
-    }
-
-    .nav-bar a {
-        font-size: 18px;
+        font-size: 16px;
+        overflow: hidden;
+        
+        /* arah transform dan waktu transisi */
+        transform: scaleY(1);
+        transition: transform .5s ease, height .2s;
     }
 
     .nav-bar a::after,
@@ -56,23 +71,25 @@ header {
         background: none;
     }
 
-    .logoweb {
-        display: none;
+    .nav-bar .btnLogin-popup {
+        width: 100px;
+        height: 40px;
+        border: 1px solid #112a3b;
     }
     
-    #check:checked ~ nav-bar {
-        top: 0;
+    #check:checked ~ .nav-bar {
+        display: block;
     }
 
-    #maintext {
-        margin-top: 48vh;
+    div main {
+        margin-top: 18vh ;
+        font-size: 16px;
+        /* height: auto;
+        min-height: calc(100vh - 378px - 42px); */
     }
-     
+
 }
 
 /* untuk screen desktop (lebih dari 800px) */
 @media only screen and (min-width: 800px) {
-    .nav-bar a {
-        display: flex;
-    }
 }
